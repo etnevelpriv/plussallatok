@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plüssállatok</title>
+</head>
+
+<body>
+
+  <form id="plussallatForm">
+    <div class="formELement">
+      <label for="name">Név</label>
+      <input id="name" class="textInput" name="nameInput" type="text" placeholder="A plüss neve...">
+    </div>
+    <div class="formELement">
+      <label for="height">Magasság</label>
+      <input id="height" class="numInput" name="heightInput" min="1" max="50" type="number"
+        placeholder="A plüss magassága...">
+    </div>
+    <div class="formELement">
+      <label for="color">Szín</label>
+      <select id="color">
+        <option class="colorOption" value="piros">Piros</option>
+        <option class="colorOption" value="kek">Kék</option>
+        <option class="colorOption" value="sarga">Sárga</option>
+        <option class="colorOption" value="zold" selected>Zöld</option>
+      </select>
+    </div>
+    <input class="submitFormButton" id="submitFormButton" type="submit" value="Feltöltés">
+  </form>
+  <script type="module" src="./src/main.ts"></script>
+</body>
+
+</html>
