@@ -51,5 +51,18 @@ const fillDb = async function () {
     };
 };
 
+const generateName = function () {
+    const letters:string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let name = '';
+    const length = Math.floor(Math.random() * 10) + 1;
+    for (let i = 0; i < length; i++) {
+        const randomLetter = Math.floor(Math.random() * letters.length);
+        name += letters[randomLetter];
+    };
+    // console.log(name);
+    return(name);
+};
+
 // fillDb();
-getFetchData();
+// getFetchData();
+// generateName();
