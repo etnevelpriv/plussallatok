@@ -63,6 +63,10 @@ const generateName = function () {
     return(name);
 };
 
+const generateHeight = function () {
+    Math.floor(Math.random() * 49) + 1;
+};
+
 // fillDb();
 // getFetchData();
 // generateName();
