@@ -64,7 +64,12 @@ const generateName = function () {
 };
 
 const generateHeight = function () {
-    Math.floor(Math.random() * 49) + 1;
+    return (Math.floor(Math.random() * 49) + 1);
+};
+
+const generateColor = function () {
+    const colors:string[] = ['piros', 'kek', 'sarga', 'zold'];
+    return (colors[Math.floor(Math.random()*colors.length)]);
 };
 
 // fillDb();
